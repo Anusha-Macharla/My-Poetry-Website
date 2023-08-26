@@ -1,0 +1,222 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+  <title>My Poems</title>
+  <style>
+    
+    h1 {
+      color: #000; 
+      transition: color 1s;
+      font-size: 60px; 
+    }
+    footer{
+    text-align: center;
+    background-color: #0B0D17;
+    color: white;
+    margin-bottom: 0;
+    padding-bottom: 115px;
+}
+
+footer p{
+    margin-bottom: 0;
+}
+.bottom-text{
+    font-size: 30px;
+    font-weight: 800;
+    line-height: 40px;
+    padding: 37px 0px;
+}
+.name-color{
+    color: #FA9048;
+}
+.last-name{
+    color: #5B5B5B;
+}
+
+ @keyframes floatAnimation {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-20px); 
+        }
+    }
+
+    .floating-poem p {
+        font-family: Arial;
+        font-size: 14px;
+        margin: 10px 0;
+        animation: floatAnimation 2s infinite;
+    }
+	.transparent-box {
+        background-color: rgba(255, 255, 255, 0.5); 
+        padding: 10px;
+        border-radius: 5px;
+		border: 2px solid black; 
+		margin-right: 50px;
+    }
+	  .feedback-box {
+        background-color: rgba(255, 255, 255, 0.8); 
+        padding: 20px;
+        border-radius: 10px;
+        border: 2px solid black; 
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .feedback-btn {
+        margin-top: 10px;
+        padding: 5px 20px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        background-color: blue;
+        color: white;
+        border-radius: 5px;
+    }
+
+    .feedback-btn:hover {
+        background-color: darkblue;
+    }
+  </style>
+</head>
+<body>
+  <!DOCTYPE html>
+    <html lang="en">
+      <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Navbar</title>
+        <link
+          rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+        />
+
+        <link rel="stylesheet" href="styles.css" />
+      </head>
+      <body>
+        <nav>
+          <div class="nav-center">
+            <div class="nav-header">
+              <h2>My Quotes!</h2>
+              <button class="nav-toggle">
+                <i class="fas fa-bars"></i>
+              </button>
+            </div>
+            <ul class="links">
+              <li>
+                <h1><span style="font-size: 60px;">Anusha's Poetry</span></h1>
+
+              </li>
+              
+            </ul>
+      
+            <ul class="social-icons">
+            
+              <li>
+                <a href="https://www.instagram.com/anusha_926/">
+                  <i class="fab fa-instagram-square"></i>
+                </a>
+              </li>
+             
+              <li>
+                <a href="https://www.linkedin.com/in/macharla-anusha/">
+                  <i class="fab fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+        <script src="app.js"></script>
+      </body>
+    </html>
+
+    <section class="about" id="about">
+      <div class="image">
+        <img src="images\WhatsApp Image 2023-08-26 at 1.22.45 PM.jpeg" alt="" >
+
+      </div>
+  
+      <div class="content" style="margin: 0 auto;">
+        <h3 class="title" id="changing-h3" style="margin-left: 120px;">
+    <font color="red">Friendship</font>
+    <font color="blue">Poem</font>
+</h3>
+
+
+    <div class="transparent-box floating-poem">
+  <center>  <p>
+        మొదలైన రోజు కూడ మరిచిపోయానే,<br>
+        నీవు ఎలా పరిచయమయ్యావే నేస్తమా?
+    </p>
+
+    <p>
+        క్షణం, నిమిషం, గడియ తేడాలేకుండానే,<br>
+        నీవు ఎలా దెగ్గరయ్యావే నేస్తమా?
+    </p>
+
+    <p>
+        వాన చినుకులతో వొళ్ళు  ఓలకరించే భావన,<br>
+        నీ మాటల ద్వారా తెలిసే భావనే కదా నేస్తమా?
+    </p>
+
+    <p>
+        అగ్ని ఎంత అవసరమైన ఆటలు ఆడరేమి,<br>
+        నీ కోపం అగ్నివలె ప్రకాశవంతం కదా  నేస్తమా?
+    </p>
+
+    <p>
+        గడిచిపోయే రోజులు కాలాన్ని మర్చిపోయినట్లే,<br>
+        నీవు పడే ఈ తగదలు నూరవా నేస్తమా?
+    </p></center>
+</div>
+
+        <a href="#" class="btn">read more</a>
+     
+      </div>
+    </section>
+  
+    <script>
+      
+      const changingH1 = document.querySelector('.links h1');
+      const colors = ['#FF5733', '#33FF77', '#3399FF', '#FF33FF', '#FFFF33'];
+      let currentIndex = 0;
+  
+      setInterval(() => {
+        changingH1.style.color = colors[currentIndex];
+        currentIndex = (currentIndex + 1) % colors.length;
+      }, 1000); 
+    </script>
+	<div class="feedback-box">
+    <p>Do you like this poem?</p>
+    <button class="feedback-btn" id="yesBtn">Yes</button>
+    <button class="feedback-btn" id="noBtn">No</button>
+    <p id="feedbackMessage" style="display: none;"></p>
+  </div>
+
+  <script>
+    const yesBtn = document.getElementById("yesBtn");
+    const noBtn = document.getElementById("noBtn");
+    const feedbackMessage = document.getElementById("feedbackMessage");
+
+    yesBtn.addEventListener("click", function() {
+      feedbackMessage.innerText = "Thank you very much!";
+      feedbackMessage.style.display = "block";
+    });
+
+    noBtn.addEventListener("click", function() {
+      feedbackMessage.innerText = "Thank you, I will improve for sure!";
+      feedbackMessage.style.display = "block";
+    });
+  </script>
+    <footer>
+      <p class="bottom-text"><span class="name-color">Anusha</span> <span class="last-name">Macharla</span></p>
+      <h2>A true friend is for ever a friend.A friend is one soul abiding in two bodies.</h2>
+  </footer>
+  </body>
+  </html>
+  
